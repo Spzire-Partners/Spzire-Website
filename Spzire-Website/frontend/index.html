@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spzire Partners - Coming Soon</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="image.png" alt="Spzire Partners Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <div>
+      <h1>Innovation Meets Precision.<br />We Build the Future of AI-Driven Finance.</h1>
+      <p class="hero-subtext">
+        At Spzire Partners, we engineer scalable digital and financial ecosystems powered by AI, automation, and data intelligence — designed to unlock growth, streamline operations, and redefine what's possible.
+      </p>
+      <form
+        class="waitlist-form"
+        onsubmit="event.preventDefault(); alert('Thank you for joining the waitlist!');"
+      >
+        <input
+          type="email"
+          placeholder="Enter your email"
+          required
+          aria-label="Email for waitlist"
+        />
+        <button type="submit">Join Waitlist</button>
+      </form>
+      <div class="scroll-down" aria-hidden="true" title="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Spzire Partners. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    document.querySelector(".scroll-down").addEventListener("click", () => {
+      window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
