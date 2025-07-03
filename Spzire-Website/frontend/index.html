@@ -6,13 +6,19 @@
   <title>Spzire Partners - Coming Soon</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <!-- Firebase App (core SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <!-- Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="firebase.js" defer></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="navbar">
     <div class="logo">
       <img src="image.png" alt="Spzire Partners Logo" />
-    </div>
+      <span class="logo-text">Spzire Partners</span>
+    </div>    
     <nav>
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
@@ -26,20 +32,22 @@
     <div>
       <h1>Innovation Meets Precision.<br />We Build the Future of AI-Driven Finance.</h1>
       <p class="hero-subtext">
-        At Spzire Partners, we engineer scalable digital and financial ecosystems powered by AI, automation, and data intelligence — designed to unlock growth, streamline operations, and redefine what's possible.
+        We engineer smarter systems and strategic insights so your business can lead the future.
       </p>
-      <form
-        class="waitlist-form"
-        onsubmit="event.preventDefault(); alert('Thank you for joining the waitlist!');"
-      >
+      <form class="waitlist-form">
         <input
           type="email"
+          name="email"
           placeholder="Enter your email"
           required
           aria-label="Email for waitlist"
         />
         <button type="submit">Join Waitlist</button>
       </form>
+      <!-- Message container -->
+      <div id="waitlist-message" role="alert" aria-live="polite" style="margin-top:10px; color: green;"></div>
+
+      
       <div class="scroll-down" aria-hidden="true" title="Scroll down">
         <i class="fas fa-chevron-down"></i>
       </div>
